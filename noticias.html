@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TADS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <header class="container-fluid bg-dark text-light">
+            <div style="display:flex">
+                <a href="https://sigaa.ufrn.br/sigaa/public/home.jsf" style="margin-top: 2px;" class="text-light">SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</a>
+                <span style="margin-left: 10px; float: right;" class="dropdown"> 
+                    <button style="margin-top: 2px; margin-left: 35px;" class="btn btn-outline-light btn-sm dropdown-toggle" type="button" id="idiomas" data-bs-toggle="dropdown"  aria-expanded="false">
+                        idiomas
+                    </button>
+                        <ul class="dropdown-menu" aria-labelledby="idiomas">
+                            <li><a class="dropdown-item" href="#">ingles</a></li>
+                            <li><a class="dropdown-item" href="#">espanhol</a></li>
+                            <li><a class="dropdown-item" href="#">frances</a></li>
+                        </ul>
+                </span>
+            </div>
+            <div style="display:block; float:right; margin-left: 40px;">
+                <a href="https://ufrn.br/" >
+                    
+                    <img src="https://www.sigaa.ufrn.br/sigaa/public/programa/img/instituicao_programa.png" width="102px" height="98px" alt="imagem para entrar no portal da ufrn">
+                </a>
+            </div>
+        </header>
+        <section>
+            <article class="container bg-light" style="margin-top: 10px; margin-bottom: 10px;">
+                <div style="display: inline-block;">
+                    <a href="#">
+                        <img src="https://arquivos.info.ufrn.br/arquivos/201913023034eb6318005a55275305503/nometads.png" width="190px" height="96px">
+                    </a>
+                </div>
+                <div style="display: inline-block;">
+                    <div style="margin-left: 10px;">
+                        <a  href="https://sigaa.ufrn.br/sigaa/public/home.jsf">CURSO DE ANALISE E DESENVOLVIMENTO DE SISTEMAS/EAJ</a>
+                    </div>
+                    <div>
+                        <a class="text-dark" href="https://sigaa.ufrn.br/sigaa/public/home.jsf">ESCOLA AGRICOLA DE JUNDIAI - EAJ</a>
+                        <span style="margin-left: 90px;" class="text-primary">Telefone/Ramal:</span><span>(84) 3342-2297/227</span>
+                    </div>
+                    <div>
+                        <a href="#">http://www.graduacao.ufrn.br/tads</a>
+                    </div>   
+                </div>
+            </article>
+            <nav class="container navbar navbar-expand-lg navbar-dark bg-dark ">
+                <a href="#" class="navbar-brand">
+                    <img src="data:image/png;base64,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" width="70" height="30" />    Menu
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class=" navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"> <a href="q2apresenracao.html" class="nav-link js-scroll-trigger">Apresentacao</a> </li>
+                        <li class="nav-item"> <a href="proj_pedagogico.html" class="nav-link js-scroll-trigger">Projeto Pedagogico</a> </li>
+                        <li class="nav-item"> <a href="#" class="nav-link js-scroll-trigger">Noticias</a> </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <article class="container">
+                <h5 class="text-center">NOTICIAS</h5>
+                <table class="table">
+                    <thead>
+                        <tr >
+                            <th scope="col">DATA</th>
+                            <th scope="col">TITULO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>26/10/2021 09:04</td>
+                            <td><a class="text-dark" href="https://sigaa.ufrn.br/sigaa/public/curso/noticias_desc.jsf?noticia=155571796&lc=pt_BR&id=94598200">Calendário para projeto de Trabalho de Conclusão de Curso Ano/Semestre 2022.1</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>26/10/2021 09:02</td>
+                            <td><a class="text-dark" href="https://sigaa.ufrn.br/sigaa/public/curso/noticias_desc.jsf?noticia=155571787&lc=pt_BR&id=94598200">Semana de defesa de Trabalhos de Conclusão de Curso - Ano/Semestre 2021.2</a></td>
+                        </tr>
+                       	
+                        <tr>
+                            <td>30/09/2021 07:53</td>
+                            <td><a class="text-dark" href="https://sigaa.ufrn.br/sigaa/public/curso/noticias_desc.jsf?noticia=154957459&lc=pt_BR&id=94598200">Plano de curso das disciplinas de 2021.2</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>18/05/2021 14:02</td>
+                            <td><a class="text-dark" href="https://sigaa.ufrn.br/sigaa/public/curso/noticias_desc.jsf?noticia=151042581&lc=pt_BR&id=94598200">Planos de curso das turmas de 2021.1</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>10/02/2021 10:11</td>
+                            <td><a class="text-dark" href="https://sigaa.ufrn.br/sigaa/public/curso/noticias_desc.jsf?noticia=148290073&lc=pt_BR&id=94598200">Semana de defesa de Trabalhos de Conclusão de Curso - Ano/Semestre 2020.2</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>10/02/2021 10:10</td>
+                            <td><a class="text-dark" href="#">Calendário para projeto de Trabalho de Conclusão de Curso Ano/Semestre 2021.1</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>10/02/2021 10:08</td>
+                            <td><a class="text-dark" href="#">Plano de curso das turmas de 2020.2</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>17/08/2020 09:34</td>
+                            <td><a class="text-dark" href="#">Calendário para projeto de Trabalho de Conclusão de Curso Ano/Semestre 2020.2</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>17/08/2020 09:32</td>
+                            <td><a class="text-dark" href="#">Semana de defesa de Trabalhos de Conclusão de Curso - Ano/Semestre 2020.1</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>12/08/2020 19:54</td>
+                            <td><a class="text-dark" href="#">Plano de curso das turmas de 2020.1 - Retomada</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>29/07/2020 00:40</td>
+                            <td><a class="text-dark" href="#">Defesa de Trabalho de Conclusão de Curso de 2020.1</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>09/06/2020 21:05</td>
+                            <td><a class="text-dark" href="#">Planos de Curso para o Período Letivo Suplementar</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>05/03/2020 13:23</td>
+                            <td><a class="text-dark" href="#">SRI divulga edital interno de seleção para mobilidade Internacional</a></td>
+                        </tr>
+	
+                        <tr>
+                            <td>28/11/2019 14:23</td>
+                            <td><a class="text-dark" href="#">Defesas de Trabalho de Conclusão de Curso de 2019.2</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>09/06/2019 16:28</td>
+                            <td><a class="text-dark" href="#">Defesas de Trabalho de Conclusão de Curso de 2019.1</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>07/05/2019 20:05</td>
+                            <td><a class="text-dark" href="#">Oportunidade de bolsa de Iniciação Científica para o projeto IND4FIBRE</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>12/03/2019 10:32</td>
+                            <td><a class="text-dark" href="#">Semana de defesa de Trabalhos de Conclusão de Curso - Ano/Semestre 2019.1</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>12/03/2019 10:30</td>
+                            <td><a class="text-dark" href="#">Calendário para projetos de Trabalhos de Conclusão de Curso Ano/Semestre 2019.2</a></td>
+                        </tr>	
+	
+                        <tr>
+                            <td>06/11/2018 21:57</td>
+                            <td><a class="text-dark" href="#">Apresentações de TCC de 2018.2</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>09/08/2018 17:11</td>
+                            <td><a class="text-dark" href="#">Semana de defesa de Trabalhos de Conclusão de Curso - Ano/Semestre 2018.2</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>09/08/2018 17:09</td>
+                            <td><a class="text-dark" href="#">Calendário para projetos de Trabalhos de Conclusão de Curso Ano/Semestre 2019.1</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>19/07/2018 09:40</td>
+                            <td><a class="text-dark" href="#">Editais para Bolsas da Assistência Estudantil 2018.2</a></td>
+                        </tr>	
+	
+                        <tr>
+                            <td>19/07/2018 09:30</td>
+                            <td><a class="text-dark" href="#">Aberto o período para solicitação de matrícula para 2018.2</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>17/06/2018 19:48</td>
+                            <td><a class="text-dark" href="#">Bancas de defesa de Trabalho de Conclusão de curso 2018.1</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>01/05/2018 21:28</td>
+                            <td><a class="text-dark" href="#">I Workshop sobre Agrocomputação: Internet das coisas e suas aplicações na indústria 4.0</a></td>
+                        </tr>	
+	
+                        <tr>
+                            <td>16/03/2018 17:54</td>
+                            <td><a class="text-dark" href="#">Calendário para projetos de Trabalhos de Conclusão de Curso Ano/Semestre 2018.1</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>16/03/2018 17:52</td>
+                            <td><a class="text-dark" href="#">Semana de defesa de Trabalhos de Conclusão de Curso - Ano/Semestre 2018.1</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>22/02/2018 23:05</td>
+                            <td><a class="text-dark" href="#">Programa de Monitoria para Melhoria do Ensino em Matemática e Programação do TADS 2018 abre vagas para monitores bolsistas e voluntários.</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>20/10/2015 21:38</td>
+                            <td><a class="text-dark" href="#">Germinação Computadorizada: Novo sistema de análise de sementes agiliza seleção e aprovação dos lotes comercializáveis</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>20/10/2015 18:27</td>
+                            <td><a class="text-dark" href="#">Semana do Código 2015</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>18/10/2015 16:23</td>
+                            <td><a class="text-dark" href="#">I AGROTECH - Tecnologias da Informação e Automação nas Ciências Agrárias</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>28/08/2015 18:23</td>
+                            <td><a class="text-dark" href="#">Desenvolvimento de Sistemas Embarcados: oportunidades de carreira e perspectivas</a></td>
+                        </tr>	
+	
+                        <tr>
+                            <td>12/08/2015 19:41</td>
+                            <td><a class="text-dark" href="#">Vertentes Produtivas nas Ciências Agrárias e TADS: motivação para o pensar de soluções</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>20/02/2015 10:34</td>
+                            <td><a class="text-dark" href="#">Resultado do processo de avaliação do curso</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>10/02/2015 08:55</td>
+                            <td><a class="text-dark" href="#">UFRN recebe membros do INEP para avaliação de reconhecimento de curso</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>12/09/2014 21:41</td>
+                            <td><a class="text-dark" href="#">Tecnologias da informação e automação nas ciências agrárias</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>21/07/2014 11:06</td>
+                            <td><a class="text-dark" href="#">Processo de Desenvolvimento de Software Agrário - PDSA</a></td>
+                        </tr>	
+
+                        <tr>
+                            <td>23/04/2014 14:07</td>
+                            <td><a class="text-dark" href="#">I Semana de Agroinformática</a></td>
+                        </tr>		
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+
+
+
+
+        <footer class="container-fluid bg-dark text-light">
+            <p style="display: inline-block;">SIGAA | Superintendência de Informática - | </p>
+            <p style="display: inline-block;">| Copyright © 2006-2022 - UFRN -</p> 
+            <p style="display: inline-block;">sigaa28-producao.info.ufrn.br.sigaa28-producao</p>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous"></script>
+</body>
